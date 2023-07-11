@@ -11,6 +11,7 @@ public class Main {
             Pattern pattern = Pattern.compile("\\bs[a-z]*?s\\b");
             Matcher matcher = pattern.matcher(text);
             Matcher matcher2 = pattern.matcher(text);
+            Matcher matcher3 = pattern.matcher(text);
 
             while (matcher.find()) {
                 System.out.println("Match found: " + matcher.group());
