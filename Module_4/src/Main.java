@@ -10,6 +10,8 @@ public class Main {
             String text = "Regular Expressions or Regex is an API for defining String patterns that can be used for searching, manipulating and editing a text. It is widely used to define a constraint on strings such as a password. Regular Expressions are provided under java.util.regex package.";
             Pattern pattern = Pattern.compile("\\bs[a-z]*?s\\b");
             Matcher matcher = pattern.matcher(text);
+            Matcher matcher2 = pattern.matcher(text);
+
             while (matcher.find()) {
                 System.out.println("Match found: " + matcher.group());
             }
